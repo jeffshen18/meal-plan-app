@@ -28,6 +28,10 @@ module MealPlan
     # the framework and any gems in your application.
 
     # Don't generate system test files.
-    config.generators.system_tests = nil
+    # config.generators.system_tests = nil
+
+    config.generators do |g|
+      g.text_framework :minitest, spec: true
+    end
   end
 end

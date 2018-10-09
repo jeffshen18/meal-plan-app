@@ -24,9 +24,12 @@ spec:
         tier: frontend
     spec:
       containers:
-        - image: "coderjourney/mealplan-frontend:1.0.0"
+        - image: us.gcr.io/learn-rails-218820/mealplan-frontend:1.0.0
           name: nginx
           lifecycle:
             preStop:
               exec:
                 command: ["/usr/sbin/nginx","-s","quit"]
+
+
+# push us.gcr.io/learn-rails-218820/mealplan:1.0.0
